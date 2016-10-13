@@ -1,0 +1,290 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: #E5E3DC;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, ul, ol, li, input {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 185.5072px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  html {
+    font-size: 105.07244px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 99.99998px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 99.27534px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 90.57969px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 86.9565px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 77.29467px;
+  }
+}
+
+.todo {
+  width: 4.14rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 0;
+}
+
+@font-face {
+  font-family: "icon-font";
+  src: url(iconfont.woff);
+}
+
+.icon-font {
+  font-family: "icon-font";
+}
+
+.icon-passthrough:before {
+  content: "\e656";
+}
+
+.icon-delete:before {
+  content: "\e654";
+}
+
+.icon-xiugai:before {
+  content: "\e6d6";
+}
+
+.icon-tianjia:before {
+  content: "\e627";
+}
+
+.title {
+  width: 100%;
+  height: 0.44rem;
+  background: #000;
+  padding: 0.1rem 0;
+  color: #fff;
+  box-shadow: 0 0.01rem 0.025rem 0 black;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.title h3 {
+  font-size: 0.3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.2rem;
+  height: 0.465rem;
+  line-height: 0.465rem;
+  margin: auto;
+}
+
+.title span {
+  font-size: 0.24rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 0.465rem;
+  line-height: 0.465rem;
+  margin: auto;
+  right: 0.2rem;
+  font-weight: 500;
+}
+
+.header {
+  width: 100%;
+}
+
+.header ul::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.header ul li {
+  width: 0.82rem;
+  float: left;
+  font-weight: 500;
+  font-size: 0.14rem;
+  text-align: center;
+  cursor: pointer;
+  line-height: 0.42rem;
+}
+
+.header ul li.active {
+  color: #ff1715;
+  font-size: 0.18rem;
+}
+
+.header ul .clear.active {
+  color: blue;
+  font-size: 0.14rem;
+}
+
+.header ul .num {
+  color: #ff1715;
+  font-size: 0.16rem;
+}
+
+.header input {
+  display: block;
+  width: 3.74rem;
+  height: 0.42rem;
+  margin: 0 0.2rem;
+  box-sizing: border-box;
+  padding-left: 0.1rem;
+  border: 1px solid #eee;
+  border-radius: 0.1rem;
+  font-size: 0.16rem;
+  outline: none;
+  margin-bottom: 0.1rem;
+  display: none;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.content li {
+  width: 100%;
+  padding: 0 0.2rem;
+  border-bottom: 0.02rem solid rgba(218, 215, 206, 0.5);
+  border-left: 0.04rem solid #F9263E;
+  position: relative;
+  box-sizing: border-box;
+  transition: transform 0.8s ease;
+  height: 0.42rem;
+  background: #F1F1EF;
+}
+
+.content li span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 0.2rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  display: block;
+  z-index: 20;
+}
+
+.content li p {
+  padding-left: 0.5rem;
+  line-height: 0.4rem;
+  font-size: 0.2rem;
+}
+
+.content li .delete {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.35rem;
+  color: #F9263E;
+}
+
+.content li .xiugai {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.15rem;
+  color: #F9263E;
+  font-size: 0.2rem;
+}
+
+.content li.done {
+  border-left: 0.04rem solid #8B08ED;
+}
+
+.content li.done .finished {
+  color: red;
+}
+
+.content li.done p {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.content li.done .xiugai {
+  color: #8B08ED;
+}
+
+.content li.done .delete {
+  color: #8B08ED;
+}
+
+.footer {
+  width: 100%;
+  height: 0.45rem;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .add {
+  font-size: 0.3rem;
+  color: #fff;
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.feichu {
+  animation: feichu 0.8s ease both;
+}
+
+@keyframes feichu {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
