@@ -148,16 +148,15 @@ $(function () {
         }
 
      if(e.keyCode==13){
-         if($('.make').length==0){
-             alert(1)
-         $('.make').closest('li').find('p').text(text);
-         $('.make').removeClass('make');
-         return;
-        }else{
+         // if($('.make').length==0){
+         // $('.make').closest('li').find('p').text(text);
+         // $('.make').removeClass('make');
+         // return;
+        // }else{
              tudos.push({title:text,state:0,isDel:0});
              render();
              numb();
-         }
+         // }
 
       }
     });
