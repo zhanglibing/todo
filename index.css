@@ -206,8 +206,9 @@ input {
   font-size: 0.2rem;
   width: 0.2rem;
   height: 0.2rem;
+  padding: 0.1rem;
   display: block;
-  z-index: 20;
+  z-index: 30;
 }
 
 .content li p {
@@ -216,11 +217,17 @@ input {
   font-size: 0.2rem;
 }
 
+.content li p input {
+  width: 100%;
+  height: 100%;
+}
+
 .content li .delete {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -0.35rem;
+  left: -0.42rem;
+  padding: 0.1rem;
   color: #F9263E;
 }
 
@@ -230,7 +237,14 @@ input {
   bottom: 0;
   right: 0.15rem;
   color: #F9263E;
+  padding: 0.1rem;
   font-size: 0.2rem;
+  transition: transform 0.5s ease;
+  transform: translate3d(0, 0, 0);
+}
+
+.content li .xiugai.make {
+  transform: translate3d(0.5rem, 0, 0);
 }
 
 .content li.done {
@@ -261,18 +275,19 @@ input {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 100;
 }
 
 .footer .add {
   font-size: 0.3rem;
   color: #fff;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.35rem;
+  height: 0.35rem;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   margin: auto;
 }
 

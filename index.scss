@@ -135,19 +135,26 @@ input{
      font-size: 0.2rem;
      width:0.2rem;
      height:0.2rem;
+     padding:0.1rem;
      display: block;
-     z-index: 20;
+     z-index: 30;
    }
     p{
       padding-left:0.5rem;
       line-height: 0.4rem;
       font-size: 0.2rem;
+      input{
+        width: 100%;
+        height:100%;
+
+      }
     }
     .delete{
       position: absolute;
       top:0;
       bottom:0;
-      left:-0.35rem;
+      left:-0.42rem;
+      padding:0.1rem;
       color: #F9263E;
     }
     .xiugai{
@@ -156,7 +163,13 @@ input{
       bottom:0;
       right:0.15rem;
       color:#F9263E;
+      padding:0.1rem;
       font-size: 0.2rem;
+      transition: transform 0.5s ease;
+      transform: translate3d(0,0,0);
+      &.make{
+        transform: translate3d(0.5rem,0,0);
+      }
     }
     &.done{
       border-left:0.04rem solid #8B08ED;
@@ -169,6 +182,7 @@ input{
       }
       .xiugai{
         color:#8B08ED;
+
       }
       .delete{
         color:#8B08ED ;
@@ -183,20 +197,31 @@ input{
   position: fixed;
   bottom:0;
   left:0;
+  z-index: 100;
   .add{
     font-size: 0.3rem;
     color:#fff;
-    width:0.4rem;
-    height:0.4rem;
-    @include juzhong;
+    width:0.35rem;
+    height:0.35rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
   }
-
-
 }
 .feichu{
   animation: feichu 0.8s ease both;
 }
 @keyframes feichu {
-  0%{transform: translate3d(0,0,0)}
-  100%{transform: translate3d(-100%,0,0)}
+  0%{transform: translate3d(0,0,0);}
+  100%{transform:translate3d(-100%,0,0);}
 }
+//.zhuan{
+//  animation: zhuan 0.5s ease both;
+//}
+//@keyframes zhuan {
+//  0%{transform:rotateZ(0deg)}
+//  100%{transform: rotateZ(360deg)}
+//}
