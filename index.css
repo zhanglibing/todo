@@ -193,7 +193,7 @@ input {
   border-left: 0.04rem solid #F9263E;
   position: relative;
   box-sizing: border-box;
-  transition: transform 0.8s ease;
+  transition: transform 0.5s ease;
   height: 0.42rem;
   background: #F1F1EF;
 }
@@ -226,7 +226,7 @@ input {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -0.42rem;
+  right: -0.38rem;
   padding: 0.1rem;
   color: #F9263E;
 }
@@ -239,12 +239,12 @@ input {
   color: #F9263E;
   padding: 0.1rem;
   font-size: 0.2rem;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
   transform: translate3d(0, 0, 0);
 }
 
 .content li .xiugai.make {
-  transform: translate3d(0.5rem, 0, 0);
+  transform: translate3d(0.7rem, 0, 0);
 }
 
 .content li.done {

@@ -124,10 +124,10 @@ $(function () {
     content.on('touchmove','li',function(e){
         n=e.originalEvent.changedTouches[0].pageX;
         if(n-left>40){
-            $(this).closest('li').css("transform","translate3d(0.4rem,0,0)")
+            $(this).closest('li').css("transform","translate3d(0,0,0)")
         }
         if(n-left<-30){
-            $(this).closest('li').css("transform","translate3d(0,0,0)");
+            $(this).closest('li').css("transform","translate3d(-0.35rem,0,0)");
         }
     });
     // content.on('touchend','li',function(e){
@@ -136,7 +136,6 @@ $(function () {
     //       // $(this).css("transform","translate3d(0.3rem,0,0)")
     //     }
     // });
-
 
     //空格键
     function numb(){
